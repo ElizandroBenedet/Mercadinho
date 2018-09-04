@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgimage">
+    android:background="@drawable/market">
 
 
     <RelativeLayout
@@ -79,14 +79,6 @@
                 android:background="#ADCCE2" />
 
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginRight="40dp"
-                android:background="#ADCCE2" />
-
-
             <customfonts.MyEditText
                 android:id="@+id/sobrenome"
                 android:layout_width="match_parent"
@@ -101,6 +93,13 @@
                 android:textColor="#ADCCE2"
                 android:textColorHint="#ADCCE2"
                 android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="#ADCCE2" />
 
             <customfonts.MyEditText
                 android:id="@+id/emails"

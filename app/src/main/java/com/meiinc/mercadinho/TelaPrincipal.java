@@ -1,5 +1,6 @@
 package com.meiinc.mercadinho;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -39,6 +40,17 @@ public class TelaPrincipal extends AppCompatActivity {
     }
 
     public void adicionarLista(View quemClicou){
-        
+        Intent intencao = new Intent(getApplicationContext(), CriarListaActivity.class);
+        startActivity(intencao);
+    }
+
+    public void telaGrafico (View quemClicou){
+        Intent intencao = new Intent(getApplicationContext(), TelaGraficoActivity.class);
+        startActivity(intencao);
+    }
+
+    public void logout (View quemClicou){
+        setResult(RESULT_CANCELED);
+        finish();
     }
 }
