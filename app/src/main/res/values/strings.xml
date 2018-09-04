@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Mercadinho</string>
+    <string name="senha">Senha</string>
+    <string name="email">Email</string>
+    <string name="entrar">Entrar</string>
+    <string name="sorte_sua">Sorte sua</string>
+</resources>
