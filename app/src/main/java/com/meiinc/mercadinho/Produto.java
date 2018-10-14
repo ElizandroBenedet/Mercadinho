@@ -2,8 +2,17 @@ package com.meiinc.mercadinho;
 
 public class Produto {
     private String nome;
+    private String marca;
+    private float peso;
+    private String tipoPeso;
     private float preco;
-    private int quantidade;
+
+    public  Produto(String nome, String marca, float peso, String tipoPeso){
+        this.nome = nome;
+        this.marca = marca;
+        this.peso = peso;
+        this.tipoPeso = tipoPeso;
+    }
 
     public String getNome() {
         return nome;
@@ -21,11 +30,28 @@ public class Produto {
         this.preco = preco;
     }
 
-    public int getQuantidade() {
-        return quantidade;
+
+    public String getMarca() {
+        return marca;
     }
 
-    public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public float getPeso() {
+        return peso;
+    }
+
+    public void setPeso(float peso) {
+        this.peso = peso;
+    }
+
+    public String getTipoPeso() {
+        return tipoPeso;
+    }
+
+    public void setTipoPeso(String tipoPeso) {
+        this.tipoPeso = tipoPeso;
     }
 }

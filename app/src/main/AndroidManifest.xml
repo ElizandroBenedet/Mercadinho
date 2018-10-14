@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/icon_mercadinho_round"
+        android:icon="@drawable/icon_mercadinho_round2"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/icon_mercadinho_round"
+        android:roundIcon="@drawable/icon_mercadinho_round2"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".LoginActivity">
