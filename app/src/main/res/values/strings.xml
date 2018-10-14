@@ -4,4 +4,9 @@
     <string name="email">Email</string>
     <string name="entrar">Entrar</string>
     <string name="sorte_sua">Sorte sua</string>
+    <string name="lista">Lista:</string>
+    <string name="nome_da_lista">Nome da Lista</string>
+    <string name="tipo_de_compara_o">Tipo de Comparação:</string>
+    <string name="pre_o_total">Preço Total:</string>
+    <string name="todo">TODO</string>
 </resources>
