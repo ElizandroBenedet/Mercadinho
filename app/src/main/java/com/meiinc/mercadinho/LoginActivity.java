@@ -22,9 +22,12 @@ public class LoginActivity extends AppCompatActivity {
         EditText etUsername =  findViewById(R.id.etUsuario);
         EditText etSenha =  findViewById(R.id.etSenha);
 
-        if(etUsername.getText().toString().equals("admin") && etSenha.getText().toString().equals("admin")){
+        if(etUsername.getText().toString().equals("") && etSenha.getText().toString().equals("")){
             Toast.makeText(getApplicationContext(), "Mercadinho", Toast.LENGTH_LONG).show();
             Intent intencao = new Intent(getApplicationContext(), TelaPrincipal.class);
+            Usuario user = new Usuario();
+            user.setCidade("Promorar");
+            intencao.putExtra("userCity", user.getCidade());
             startActivity(intencao);
         }else{
             Toast.makeText(getApplicationContext(), "Mercadinho não deu liga", Toast.LENGTH_LONG).show();

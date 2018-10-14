@@ -1,6 +1,7 @@
 package com.meiinc.mercadinho;
 
 public class Produto {
+    private long id;
     private String nome;
     private String marca;
     private float peso;
@@ -53,5 +54,13 @@ public class Produto {
 
     public void setTipoPeso(String tipoPeso) {
         this.tipoPeso = tipoPeso;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 }

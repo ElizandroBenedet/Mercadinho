@@ -7,6 +7,7 @@ public class Usuario {
     private String sobrenome;
     private String email;
     private String senha;
+    private String cidade;
     ArrayList<Lista> listas;
 
     public String getNome() {
@@ -39,5 +40,13 @@ public class Usuario {
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
     }
 }
