@@ -20,7 +20,8 @@
         <activity android:name=".TelaPrincipal" />
         <activity android:name=".CriarListaActivity" />
         <activity android:name=".TelaGraficoActivity" />
-        <activity android:name=".telaListaActivity"></activity>
+        <activity android:name=".telaListaActivity" />
+        <activity android:name=".AdicionarProdutoListaActivity"></activity>
     </application>
 
 </manifest>

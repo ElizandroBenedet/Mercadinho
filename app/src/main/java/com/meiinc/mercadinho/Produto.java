@@ -1,18 +1,31 @@
 package com.meiinc.mercadinho;
 
-public class Produto {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import java.io.Serializable;
+
+import io.realm.RealmObject;
+
+public class Produto implements Parcelable{
     private long id;
     private String nome;
     private String marca;
-    private float peso;
-    private String tipoPeso;
-    private float preco;
+    private double preco;
 
-    public  Produto(String nome, String marca, float peso, String tipoPeso){
+    public Produto(){}
+
+    public Produto(Parcel in){
+        this.id = in.readLong();
+        this.nome = in.readString();
+        this.marca = in.readString();
+        this.preco = in.readDouble();
+    }
+
+    public  Produto(String nome, String marca, double preco){
         this.nome = nome;
         this.marca = marca;
-        this.peso = peso;
-        this.tipoPeso = tipoPeso;
+        this.preco = preco;
     }
 
     public String getNome() {
@@ -23,14 +36,13 @@ public class Produto {
         this.nome = nome;
     }
 
-    public float getPreco() {
+    public double getPreco() {
         return preco;
     }
 
-    public void setPreco(float preco) {
+    public void setPreco(double preco) {
         this.preco = preco;
     }
-
 
     public String getMarca() {
         return marca;
@@ -40,22 +52,6 @@ public class Produto {
         this.marca = marca;
     }
 
-    public float getPeso() {
-        return peso;
-    }
-
-    public void setPeso(float peso) {
-        this.peso = peso;
-    }
-
-    public String getTipoPeso() {
-        return tipoPeso;
-    }
-
-    public void setTipoPeso(String tipoPeso) {
-        this.tipoPeso = tipoPeso;
-    }
-
     public long getId() {
         return id;
     }
@@ -63,4 +59,27 @@ public class Produto {
     public void setId(long id) {
         this.id = id;
     }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeLong(this.id);
+        parcel.writeString(this.nome);
+        parcel.writeString(this.marca);
+        parcel.writeDouble(this.preco);
+    }
+
+    public static final Parcelable.Creator<Produto> CREATOR = new Parcelable.Creator<Produto>() {
+        public Produto createFromParcel(Parcel in) {
+            return new Produto(in);
+        }
+
+        public Produto[] newArray(int size) {
+            return new Produto[size];
+        }
+    };
 }

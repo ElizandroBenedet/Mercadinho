@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "814083899162",
+    "firebase_url": "https://mercadinho-82bb2.firebaseio.com",
+    "project_id": "mercadinho-82bb2",
+    "storage_bucket": "mercadinho-82bb2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814083899162:android:bb65a21529125afd",
+        "android_client_info": {
+          "package_name": "com.meiinc.mercadinho"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "814083899162-4td60k601s56dc7fdc9jkltv9bdj66ca.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.meiinc.mercadinho",
+            "certificate_hash": "4d8e0acd05b7fc2309f056c7dad1a64c9af8263a"
+          }
+        },
+        {
+          "client_id": "814083899162-6c35upk5giipqd1gk0s66iaihav4c57f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHnpuxIGjuQ-XYnmeKtqUi8HUC8ZNkteM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "814083899162-6c35upk5giipqd1gk0s66iaihav4c57f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

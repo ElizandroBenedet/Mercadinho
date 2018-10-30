@@ -4,10 +4,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.NumberFormat;
 
-public class ListaHolder extends RecyclerView.ViewHolder {
+public class ListaHolder extends RecyclerView.ViewHolder  {
 
     private TextView tvNomeLista;
     private TextView tvDataLista;
@@ -37,4 +38,5 @@ public class ListaHolder extends RecyclerView.ViewHolder {
         tvDataLista.setText(lista.getDataLista());
 
     }
+
 }

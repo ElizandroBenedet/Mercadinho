@@ -1,9 +1,9 @@
 package com.meiinc.mercadinho;
 
-public class Mercado {
+public class Mercado{
     private String nome;
     private String cidade;
-    private char[] telefone = new char[11];
+    private String telefone;
 
     public String getNome() {
         return nome;
@@ -21,11 +21,11 @@ public class Mercado {
         this.cidade = cidade;
     }
 
-    public char[] getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(char[] telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 }
