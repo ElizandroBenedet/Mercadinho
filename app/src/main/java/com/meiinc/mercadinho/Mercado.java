@@ -1,9 +1,18 @@
 package com.meiinc.mercadinho;
 
+import java.util.ArrayList;
+
 public class Mercado{
     private String nome;
     private String cidade;
     private String telefone;
+    private ArrayList<Produto> produtosDoMercado;
+
+    public Mercado(String nome, String cidade, String telefone){
+        this.nome = nome;
+        this.cidade = cidade;
+        this.telefone = telefone;
+    }
 
     public String getNome() {
         return nome;
@@ -27,5 +36,21 @@ public class Mercado{
 
     public void setTelefone(String telefone) {
         this.telefone = telefone;
+    }
+
+    public ArrayList<Produto> getProdutosDoMercado() {
+        return produtosDoMercado;
+    }
+
+    public void setProdutosDoMercado(ArrayList<Produto> produtosDoMercado) {
+        this.produtosDoMercado = produtosDoMercado;
+    }
+
+    public double getPrecoPorNome(String nomeProduto){
+        for (int i = 0; i < produtosDoMercado.size(); i++){
+            if(produtosDoMercado.get(i).getNome().equals(nomeProduto))
+                return produtosDoMercado.get(i).getPreco();
+        }
+        return 0;
     }
 }

@@ -55,7 +55,7 @@ public class AdicionarProdutoListaActivity extends AppCompatActivity {
         itens.add(new Produto("Alcatra", "friboi", 1.00));
         itens.add(new Produto("Pão de queijo", "Select", 4.00));
         itens.add(new Produto("Chocotone", "Bauduco", 7.50));
-        itens.add(new Produto("Batata", "", 1.00));
+        itens.add(new Produto("Batata", "BatatApp", 1.00));
         itens.add(new Produto("Macarrão", "Barilla", 11.00));
         itens.add(new Produto("Farinha de trigo", "Dona Benta", 1.00));
 

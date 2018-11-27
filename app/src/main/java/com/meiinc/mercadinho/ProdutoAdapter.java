@@ -57,20 +57,20 @@ public class ProdutoAdapter extends BaseAdapter {
             convertView = layoutInflater.inflate(R.layout.lista_produtos, null);
             itemHelper.nome = convertView.findViewById(R.id.tvNomeLista);
             itemHelper.marca = convertView.findViewById(R.id.tvDataLista);
-            //itemHelper.peso = convertView.findViewById(R.id.tvPrecoLista);
+            itemHelper.preco = convertView.findViewById(R.id.tvPrecoLista);
             convertView.setTag(itemHelper);
         }else{
             itemHelper = (ItemHelper) convertView.getTag();
         }
         itemHelper.nome.setText(produto.getNome());
         itemHelper.marca.setText(produto.getMarca());
-        //itemHelper.peso.setText(Float.toString(produto.getPeso()));
+        itemHelper.preco.setText("R$"+Double.toString(produto.getPreco()));
 
         return convertView;
     }
     private class ItemHelper {
 
-        TextView nome, marca;  //, peso;
+        TextView nome, marca, preco;
     }
 
     public Filter getFilter() {

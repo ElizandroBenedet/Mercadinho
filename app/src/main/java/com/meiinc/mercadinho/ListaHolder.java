@@ -34,7 +34,7 @@ public class ListaHolder extends RecyclerView.ViewHolder  {
 
 
         tvNomeLista.setText(lista.getNomeLista());
-        tvPrecoLista.setText(format.format(lista.getValorTotal()));
+        tvPrecoLista.setText("R$"+Double.toString(lista.getValorTotal()));
         tvDataLista.setText(lista.getDataLista());
 
     }
