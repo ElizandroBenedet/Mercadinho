@@ -46,66 +46,200 @@ public class CriarListaActivity extends AppCompatActivity {
 
         ArrayList<Produto> lena = new ArrayList<>();
 
-        lena.add(new Produto("Leite", "Longavida", 3.50));
-        lena.add(new Produto("Arroz", "Tio Urbano", 4.50));
-        lena.add(new Produto("Feijão", "Urbano", 1.00));
-        lena.add(new Produto("Açucar", "União", 1.00));
-        lena.add(new Produto("Alcatra", "friboi", 1.00));
-        lena.add(new Produto("Pão de queijo", "Select", 4.00));
-        lena.add(new Produto("Chocotone", "Bauduco", 7.50));
-        lena.add(new Produto("Batata", "", 1.00));
-        lena.add(new Produto("Macarrão", "Barilla", 5.49));
-        lena.add(new Produto("Farinha de trigo", "Dona Benta", 1.99));
-        lena.add(new Produto("Leite", "Longavida", 1.99));
-        lena.add(new Produto("Arroz", "Tio Urbano", 6.99));
-        lena.add(new Produto("Feijão", "Urbano", 9.00));
-        lena.add(new Produto("Açucar", "União", 2.00));
-        lena.add(new Produto("Alcatra", "friboi", 1.00));
-        lena.add(new Produto("Pão de queijo", "Select", 4.00));
-        lena.add(new Produto("Chocotone", "Bauduco", 7.50));
-        lena.add(new Produto("Batata", "BatatAPP", 1.00));
-        lena.add(new Produto("Macarrão", "Barilla", 10.50));
-        lena.add(new Produto("Farinha de trigo", "Dona Benta", 1.00));
-        lena.add(new Produto("Leite", "Longavida", 1.00));
-        lena.add(new Produto("Arroz", "Tio Urbano", 1.00));
-        lena.add(new Produto("Feijão", "Urbano", 1.00));
-        lena.add(new Produto("Açucar", "União", 1.00));
-        lena.add(new Produto("Alcatra", "friboi", 1.00));
-        lena.add(new Produto("Pão de queijo", "Select", 4.00));
-        lena.add(new Produto("Chocotone", "Bauduco", 7.50));
-        lena.add(new Produto("Batata", "BatatApp", 1.00));
-        lena.add(new Produto("Macarrão", "Barilla", 11.00));
-        lena.add(new Produto("Farinha de trigo", "Dona Benta", 1.00));
+        produtosAddMercado1.add(new Produto("Leite", "Longavida", 3.50));
+        produtosAddMercado1.add(new Produto("Arroz", "Tio Urbano", 4.50));
+        produtosAddMercado1.add(new Produto("Feijão", "Urbano", 1.00));
+        produtosAddMercado1.add(new Produto("Açucar", "União", 1.00));
+        produtosAddMercado1.add(new Produto("Alcatra", "friboi", 1.00));
+        produtosAddMercado1.add(new Produto("Pão de queijo", "Select", 4.00));
+        produtosAddMercado1.add(new Produto("Chocotone", "Bauduco", 7.50));
+        produtosAddMercado1.add(new Produto("Batata", "", 1.00));
+        produtosAddMercado1.add(new Produto("Macarrão", "Barilla", 5.49));
+        produtosAddMercado1.add(new Produto("Farinha de trigo", "Dona Benta", 1.99));
+        produtosAddMercado1.add(new Produto("Leite", "Longavida", 1.99));
+        produtosAddMercado1.add(new Produto("Arroz", "Tio Urbano", 6.99));
+        produtosAddMercado1.add(new Produto("Feijão", "Urbano", 9.00));
+        produtosAddMercado1.add(new Produto("Açucar", "União", 2.00));
+        produtosAddMercado1.add(new Produto("Alcatra", "friboi", 1.00));
+        produtosAddMercado1.add(new Produto("Pão de queijo", "Select", 4.00));
+        produtosAddMercado1.add(new Produto("Chocotone", "Bauduco", 7.50));
+        produtosAddMercado1.add(new Produto("Batata", "BatatAPP", 1.00));
+        produtosAddMercado1.add(new Produto("Macarrão", "Barilla", 10.50));
+        produtosAddMercado1.add(new Produto("Farinha de trigo", "Dona Benta", 1.00));
+        produtosAddMercado1.add(new Produto("Leite", "Longavida", 1.00));
+        produtosAddMercado1.add(new Produto("Arroz", "Tio Urbano", 1.00));
+        produtosAddMercado1.add(new Produto("Feijão", "Urbano", 1.00));
+        produtosAddMercado1.add(new Produto("Açucar", "União", 1.00));
+        produtosAddMercado1.add(new Produto("Alcatra", "friboi", 1.00));
+        produtosAddMercado1.add(new Produto("Pão de queijo", "Select", 4.00));
+        produtosAddMercado1.add(new Produto("Chocotone", "Bauduco", 7.50));
+        produtosAddMercado1.add(new Produto("Batata", "BatatApp", 1.00));
+        produtosAddMercado1.add(new Produto("Macarrão", "Barilla", 11.00));
+        produtosAddMercado1.add(new Produto("Farinha de trigo", "Dona Benta", 1.00));
 
-        for(int i = 0; i < lena.size(); i++){
-            produtosAddMercado1.add(lena.get(i));
-            lena.get(i).setPreco(lena.get(i).getPreco()+1);
-        }
         mercado1.setProdutosDoMercado(produtosAddMercado1);
 
-        for(int i = 0; i < lena.size(); i++){
-            produtosAddMercado2.add(lena.get(i));
-            lena.get(i).setPreco(lena.get(i).getPreco()+i*i);
-        }
+        produtosAddMercado2.add(new Produto("Leite", "Longavida", 3.00));
+        produtosAddMercado2.add(new Produto("Arroz", "Tio Urbano", 5.50));
+        produtosAddMercado2.add(new Produto("Feijão", "Urbano", 0.99));
+        produtosAddMercado2.add(new Produto("Açucar", "União", 1.00));
+        produtosAddMercado2.add(new Produto("Alcatra", "friboi", 3.00));
+        produtosAddMercado2.add(new Produto("Pão de queijo", "Select", 4.00));
+        produtosAddMercado2.add(new Produto("Chocotone", "Bauduco", 17.50));
+        produtosAddMercado2.add(new Produto("Batata", "", 2.50));
+        produtosAddMercado2.add(new Produto("Macarrão", "Barilla", 5.999));
+        produtosAddMercado2.add(new Produto("Farinha de trigo", "Dona Benta", 1.79));
+        produtosAddMercado2.add(new Produto("Leite", "Longavida", 1.89));
+        produtosAddMercado2.add(new Produto("Arroz", "Tio Urbano", 7.99));
+        produtosAddMercado2.add(new Produto("Feijão", "Urbano", 9.00));
+        produtosAddMercado2.add(new Produto("Açucar", "União", 2.00));
+        produtosAddMercado2.add(new Produto("Alcatra", "friboi", 1.00));
+        produtosAddMercado2.add(new Produto("Pão de queijo", "Select", 4.00));
+        produtosAddMercado2.add(new Produto("Chocotone", "Bauduco", 7.50));
+        produtosAddMercado2.add(new Produto("Batata", "BatatAPP", 1.00));
+        produtosAddMercado2.add(new Produto("Macarrão", "Barilla", 10.50));
+        produtosAddMercado2.add(new Produto("Farinha de trigo", "Dona Benta", 1.00));
+        produtosAddMercado2.add(new Produto("Leite", "Longavida", 1.00));
+        produtosAddMercado2.add(new Produto("Arroz", "Tio Urbano", 1.00));
+        produtosAddMercado2.add(new Produto("Feijão", "Urbano", 1.00));
+        produtosAddMercado2.add(new Produto("Açucar", "União", 1.00));
+        produtosAddMercado2.add(new Produto("Alcatra", "friboi", 1.00));
+        produtosAddMercado2.add(new Produto("Pão de queijo", "Select", 4.00));
+        produtosAddMercado2.add(new Produto("Chocotone", "Bauduco", 7.50));
+        produtosAddMercado2.add(new Produto("Batata", "BatatApp", 1.00));
+        produtosAddMercado2.add(new Produto("Macarrão", "Barilla", 11.00));
+        produtosAddMercado2.add(new Produto("Farinha de trigo", "Dona Benta", 1.00));
+
         mercado2.setProdutosDoMercado(produtosAddMercado2);
 
-        for(int i = 0; i < lena.size(); i++){
-            produtosAddMercado3.add(lena.get(i));
-            lena.get(i).setPreco(lena.get(i).getPreco()+i*i);
-        }
+        produtosAddMercado3.add(new Produto("Leite", "Longavida", 2.50));
+        produtosAddMercado3.add(new Produto("Arroz", "Tio Urbano", 14.50));
+        produtosAddMercado3.add(new Produto("Feijão", "Urbano", 8.00));
+        produtosAddMercado3.add(new Produto("Açucar", "União", 6.50));
+        produtosAddMercado3.add(new Produto("Alcatra", "friboi", 1.49));
+        produtosAddMercado3.add(new Produto("Pão de queijo", "Select", 4.10));
+        produtosAddMercado3.add(new Produto("Chocotone", "Bauduco", 7.00));
+        produtosAddMercado3.add(new Produto("Batata", "", 0.50));
+        produtosAddMercado3.add(new Produto("Macarrão", "Barilla", 5.99));
+        produtosAddMercado3.add(new Produto("Farinha de trigo", "Dona Benta", 0.99));
+        produtosAddMercado3.add(new Produto("Leite", "Longavida", 1.50));
+        produtosAddMercado3.add(new Produto("Arroz", "Tio Urbano", 7.00));
+        produtosAddMercado3.add(new Produto("Feijão", "Urbano", 9.00));
+        produtosAddMercado3.add(new Produto("Açucar", "União", 2.00));
+        produtosAddMercado3.add(new Produto("Alcatra", "friboi", 1.00));
+        produtosAddMercado3.add(new Produto("Pão de queijo", "Select", 4.00));
+        produtosAddMercado3.add(new Produto("Chocotone", "Bauduco", 7.50));
+        produtosAddMercado3.add(new Produto("Batata", "BatatAPP", 1.00));
+        produtosAddMercado3.add(new Produto("Macarrão", "Barilla", 10.50));
+        produtosAddMercado3.add(new Produto("Farinha de trigo", "Dona Benta", 1.00));
+        produtosAddMercado3.add(new Produto("Leite", "Longavida", 1.00));
+        produtosAddMercado3.add(new Produto("Arroz", "Tio Urbano", 1.00));
+        produtosAddMercado3.add(new Produto("Feijão", "Urbano", 1.00));
+        produtosAddMercado3.add(new Produto("Açucar", "União", 1.00));
+        produtosAddMercado3.add(new Produto("Alcatra", "friboi", 1.00));
+        produtosAddMercado3.add(new Produto("Pão de queijo", "Select", 4.00));
+        produtosAddMercado3.add(new Produto("Chocotone", "Bauduco", 7.50));
+        produtosAddMercado3.add(new Produto("Batata", "BatatApp", 1.00));
+        produtosAddMercado3.add(new Produto("Macarrão", "Barilla", 11.00));
+        produtosAddMercado3.add(new Produto("Farinha de trigo", "Dona Benta", 1.00));
+
         mercado3.setProdutosDoMercado(produtosAddMercado3);
 
-        for(int i = 0; i < lena.size(); i++){
-            produtosAddMercado4.add(lena.get(i));
-            lena.get(i).setPreco(lena.get(i).getPreco()+i*i);
-        }
+        produtosAddMercado4.add(new Produto("Leite", "Longavida", 3.50));
+        produtosAddMercado4.add(new Produto("Arroz", "Tio Urbano", 2.50));
+        produtosAddMercado4.add(new Produto("Feijão", "Urbano", 10.00));
+        produtosAddMercado4.add(new Produto("Açucar", "União", 11.00));
+        produtosAddMercado4.add(new Produto("Alcatra", "friboi", 10.00));
+        produtosAddMercado4.add(new Produto("Pão de queijo", "Select", 45.00));
+        produtosAddMercado4.add(new Produto("Chocotone", "Bauduco", 700.50));
+        produtosAddMercado4.add(new Produto("Batata", "", 1.00));
+        produtosAddMercado4.add(new Produto("Macarrão", "Barilla", 5.49));
+        produtosAddMercado4.add(new Produto("Farinha de trigo", "Dona Benta", 1.99));
+        produtosAddMercado4.add(new Produto("Leite", "Longavida", 1.99));
+        produtosAddMercado4.add(new Produto("Arroz", "Tio Urbano", 6.99));
+        produtosAddMercado4.add(new Produto("Feijão", "Urbano", 9.00));
+        produtosAddMercado4.add(new Produto("Açucar", "União", 2.00));
+        produtosAddMercado4.add(new Produto("Alcatra", "friboi", 1.00));
+        produtosAddMercado4.add(new Produto("Pão de queijo", "Select", 4.00));
+        produtosAddMercado4.add(new Produto("Chocotone", "Bauduco", 7.50));
+        produtosAddMercado4.add(new Produto("Batata", "BatatAPP", 1.00));
+        produtosAddMercado4.add(new Produto("Macarrão", "Barilla", 10.50));
+        produtosAddMercado4.add(new Produto("Farinha de trigo", "Dona Benta", 1.00));
+        produtosAddMercado4.add(new Produto("Leite", "Longavida", 1.00));
+        produtosAddMercado4.add(new Produto("Arroz", "Tio Urbano", 1.00));
+        produtosAddMercado4.add(new Produto("Feijão", "Urbano", 1.00));
+        produtosAddMercado4.add(new Produto("Açucar", "União", 1.00));
+        produtosAddMercado4.add(new Produto("Alcatra", "friboi", 1.00));
+        produtosAddMercado4.add(new Produto("Pão de queijo", "Select", 4.00));
+        produtosAddMercado4.add(new Produto("Chocotone", "Bauduco", 7.50));
+        produtosAddMercado4.add(new Produto("Batata", "BatatApp", 1.00));
+        produtosAddMercado4.add(new Produto("Macarrão", "Barilla", 11.00));
+        produtosAddMercado4.add(new Produto("Farinha de trigo", "Dona Benta", 1.00));
+
         mercado4.setProdutosDoMercado(produtosAddMercado4);
 
-        for(int i = 0; i < lena.size(); i++){
-            produtosAddMercado5.add(lena.get(i));
-            lena.get(i).setPreco(lena.get(i).getPreco()+i*i);
-        }
+        produtosAddMercado5.add(new Produto("Leite", "Longavida", 35.50));
+        produtosAddMercado5.add(new Produto("Arroz", "Tio Urbano", 45.50));
+        produtosAddMercado5.add(new Produto("Feijão", "Urbano", 15.00));
+        produtosAddMercado5.add(new Produto("Açucar", "União", 15.00));
+        produtosAddMercado5.add(new Produto("Alcatra", "friboi", 15.00));
+        produtosAddMercado5.add(new Produto("Pão de queijo", "Select", 45.00));
+        produtosAddMercado5.add(new Produto("Chocotone", "Bauduco", 75.50));
+        produtosAddMercado5.add(new Produto("Batata", "", 15.00));
+        produtosAddMercado5.add(new Produto("Macarrão", "Barilla", 5.49));
+        produtosAddMercado5.add(new Produto("Farinha de trigo", "Dona Benta", 1.99));
+        produtosAddMercado5.add(new Produto("Leite", "Longavida", 1.99));
+        produtosAddMercado5.add(new Produto("Arroz", "Tio Urbano", 6.99));
+        produtosAddMercado5.add(new Produto("Feijão", "Urbano", 9.00));
+        produtosAddMercado5.add(new Produto("Açucar", "União", 2.00));
+        produtosAddMercado5.add(new Produto("Alcatra", "friboi", 1.00));
+        produtosAddMercado5.add(new Produto("Pão de queijo", "Select", 4.00));
+        produtosAddMercado5.add(new Produto("Chocotone", "Bauduco", 7.50));
+        produtosAddMercado5.add(new Produto("Batata", "BatatAPP", 1.00));
+        produtosAddMercado5.add(new Produto("Macarrão", "Barilla", 10.50));
+        produtosAddMercado5.add(new Produto("Farinha de trigo", "Dona Benta", 1.00));
+        produtosAddMercado5.add(new Produto("Leite", "Longavida", 1.00));
+        produtosAddMercado5.add(new Produto("Arroz", "Tio Urbano", 1.00));
+        produtosAddMercado5.add(new Produto("Feijão", "Urbano", 1.00));
+        produtosAddMercado5.add(new Produto("Açucar", "União", 1.00));
+        produtosAddMercado5.add(new Produto("Alcatra", "friboi", 1.00));
+        produtosAddMercado5.add(new Produto("Pão de queijo", "Select", 4.00));
+        produtosAddMercado5.add(new Produto("Chocotone", "Bauduco", 7.50));
+        produtosAddMercado5.add(new Produto("Batata", "BatatApp", 1.00));
+        produtosAddMercado5.add(new Produto("Macarrão", "Barilla", 11.00));
+        produtosAddMercado5.add(new Produto("Farinha de trigo", "Dona Benta", 0.01));
+
         mercado5.setProdutosDoMercado(produtosAddMercado5);
+
+//        for(int i = 0; i < lena.size(); i++){
+//            produtosAddMercado1.add(lena.get(i));
+//            lena.get(i).setPreco(lena.get(i).getPreco()+1);
+//        }
+//        mercado1.setProdutosDoMercado(produtosAddMercado1);
+//
+//        for(int i = 0; i < lena.size(); i++){
+//            produtosAddMercado2.add(lena.get(i));
+//            lena.get(i).setPreco(lena.get(i).getPreco()+i*i);
+//        }
+//        mercado2.setProdutosDoMercado(produtosAddMercado2);
+//
+//        for(int i = 0; i < lena.size(); i++){
+//            produtosAddMercado3.add(lena.get(i));
+//            lena.get(i).setPreco(lena.get(i).getPreco()+i*i);
+//        }
+//        mercado3.setProdutosDoMercado(produtosAddMercado3);
+//
+//        for(int i = 0; i < lena.size(); i++){
+//            produtosAddMercado4.add(lena.get(i));
+//            lena.get(i).setPreco(lena.get(i).getPreco()+i*i);
+//        }
+//        mercado4.setProdutosDoMercado(produtosAddMercado4);
+//
+//        for(int i = 0; i < lena.size(); i++){
+//            produtosAddMercado5.add(lena.get(i));
+//            lena.get(i).setPreco(lena.get(i).getPreco()+i*i);
+//        }
+//        mercado5.setProdutosDoMercado(produtosAddMercado5);
 
 
 
@@ -149,7 +283,7 @@ public class CriarListaActivity extends AppCompatActivity {
 
         AlertDialog.Builder b = new AlertDialog.Builder(this);
         b.setTitle("Selecione o modo de organizar os preços");
-        final String[] modo = {"Por mercado", "Por preço"};
+        final String[] modo = {"Por mercado", "Por menor preço"};
         b.setItems(modo, new DialogInterface.OnClickListener() {
 
             @Override
@@ -174,27 +308,27 @@ public class CriarListaActivity extends AppCompatActivity {
                                 switch (which){
                                     case 0:
                                         for (int i=0;i<itens.size();i++){
-                                            itens.get(i).setPreco(mercado1.getPrecoPorNome(itens.get(i).getNome()));
+                                            itens.get(i).setPreco(mercado1.getPrecoPorNome(itens.get(i).getNome(), itens.get(i).getMarca()));
                                         }
                                         break;
                                     case 1:
                                         for (int i=0;i<itens.size();i++){
-                                            itens.get(i).setPreco(mercado2.getPrecoPorNome(itens.get(i).getNome()));
+                                            itens.get(i).setPreco(mercado2.getPrecoPorNome(itens.get(i).getNome(), itens.get(i).getMarca()));
                                         }
                                         break;
                                     case 2:
                                         for (int i=0;i<itens.size();i++){
-                                            itens.get(i).setPreco(mercado3.getPrecoPorNome(itens.get(i).getNome()));
+                                            itens.get(i).setPreco(mercado3.getPrecoPorNome(itens.get(i).getNome(), itens.get(i).getMarca()));
                                         }
                                         break;
                                     case 3:
                                         for (int i=0;i<itens.size();i++){
-                                            itens.get(i).setPreco(mercado4.getPrecoPorNome(itens.get(i).getNome()));
+                                            itens.get(i).setPreco(mercado4.getPrecoPorNome(itens.get(i).getNome(), itens.get(i).getMarca()));
                                         }
                                         break;
                                     case 4:
                                         for (int i=0;i<itens.size();i++){
-                                            itens.get(i).setPreco(mercado5.getPrecoPorNome(itens.get(i).getNome()));
+                                            itens.get(i).setPreco(mercado5.getPrecoPorNome(itens.get(i).getNome(), itens.get(i).getMarca()));
                                         }
                                         break;
                                 }
@@ -221,6 +355,24 @@ public class CriarListaActivity extends AppCompatActivity {
                         c.show();
                         break;
                     case 1:
+                        //Toast.makeText(getApplicationContext(), "FEBEBEHY", Toast.LENGTH_SHORT).show();
+                        for (int i=0;i<itens.size();i++){
+                            itens.get(i).setPreco(mercado1.getPrecoPorNome(itens.get(i).getNome(), itens.get(i).getMarca()));
+
+                            if(mercado2.getPrecoPorNome(itens.get(i).getNome(), itens.get(i).getMarca()) < itens.get(i).getPreco()){
+                                itens.get(i).setPreco(mercado2.getPrecoPorNome(itens.get(i).getNome(), itens.get(i).getMarca()));
+                            }
+                            if(mercado3.getPrecoPorNome(itens.get(i).getNome(), itens.get(i).getMarca()) < itens.get(i).getPreco()) {
+                                itens.get(i).setPreco(mercado3.getPrecoPorNome(itens.get(i).getNome(), itens.get(i).getMarca()));
+                            }
+                            if(mercado4.getPrecoPorNome(itens.get(i).getNome(), itens.get(i).getMarca()) < itens.get(i).getPreco()){
+                                itens.get(i).setPreco(mercado4.getPrecoPorNome(itens.get(i).getNome(), itens.get(i).getMarca()));
+                            }
+                            if(mercado5.getPrecoPorNome(itens.get(i).getNome(), itens.get(i).getMarca()) < itens.get(i).getPreco()) {
+                                itens.get(i).setPreco(mercado5.getPrecoPorNome(itens.get(i).getNome(), itens.get(i).getMarca()));
+                            }
+                        }
+
                         Lista listaProdutos = new Lista();
                         listaProdutos.setListaProdutos(itens);
                         listaProdutos.setNomeLista(etNomeLista.getText().toString());

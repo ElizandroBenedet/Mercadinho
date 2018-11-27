@@ -46,9 +46,9 @@ public class Mercado{
         this.produtosDoMercado = produtosDoMercado;
     }
 
-    public double getPrecoPorNome(String nomeProduto){
+    public double getPrecoPorNome(String nomeProduto, String marcaProduto){
         for (int i = 0; i < produtosDoMercado.size(); i++){
-            if(produtosDoMercado.get(i).getNome().equals(nomeProduto))
+            if(produtosDoMercado.get(i).getNome().equals(nomeProduto) && produtosDoMercado.get(i).getMarca().equals(marcaProduto))
                 return produtosDoMercado.get(i).getPreco();
         }
         return 0;

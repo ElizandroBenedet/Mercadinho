@@ -36,10 +36,10 @@ public class TelaPrincipal extends AppCompatActivity {
         //Usuario usuarioLogado = (Usuario) getIntent().getSerializableExtra("usuario");
         //ArrayList <Lista> lista = new ArrayList<>();
 
-        for (int i = 0; i<3; i++){
-            //lista.add(new ListaParaAdapter(usuarioLogado.getListas().get(i).getNomeLista(), usuarioLogado.getListas().get(i).getDataLista(), usuarioLogado.getListas().get(i).getValorTotal()));
-            lista.add(new Lista("Lista "+i, i+1+"/10/2018", 10.00+i));
-        }
+//        for (int i = 0; i<3; i++){
+//            //lista.add(new ListaParaAdapter(usuarioLogado.getListas().get(i).getNomeLista(), usuarioLogado.getListas().get(i).getDataLista(), usuarioLogado.getListas().get(i).getValorTotal()));
+//            lista.add(new Lista("Lista "+i, i+1+"/10/2018", 10.00+i));
+//        }
         RecyclerView rvLista = findViewById(R.id.rvLista);
         rvLista.addItemDecoration(new DividerItemDecoration(this.getApplicationContext(), DividerItemDecoration.VERTICAL));
         rvLista.setHasFixedSize(true);
@@ -76,7 +76,7 @@ public class TelaPrincipal extends AppCompatActivity {
             //Toast.makeText(getApplicationContext(), "ResultCode"+requestCode, Toast.LENGTH_SHORT).show();
             if(requestCode == 3){
                 Lista novaLista = (Lista) data.getExtras().getParcelable("novaLista");
-                Toast.makeText(getApplicationContext(), novaLista.getNomeLista(), Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(), novaLista.getNomeLista(), Toast.LENGTH_LONG).show();
                 lista.add(novaLista);
                 ListaAdapter adapter = new ListaAdapter();
                 adapter.setLista(lista);
